@@ -33,6 +33,7 @@ int main() {
     }
     printf("\n");
   }
+
   /* (2) */
   for (i = 0; i <= 255; i++)
     code[i] = i;
@@ -48,6 +49,7 @@ int main() {
     ih--;
   }
   printf("\n");
+
   for (i = 0; i < 64; i++) {
     for (chr = i; chr <= /* b */ i + 192; chr += /* c */ 64) {
       if ((0x20 <= code[chr]) && (code[chr] <= 0x7E))
