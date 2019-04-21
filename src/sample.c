@@ -2,7 +2,7 @@
 
 #define InName "sample.c"
 
-#define Swap(x, y) if (1) { int z = y; y = x; x = z; } else
+#define Swap(x,y) (x^=y, y^=x, x^=y)
 
 int main() {
   FILE *infile;
