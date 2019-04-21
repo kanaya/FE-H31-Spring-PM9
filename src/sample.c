@@ -23,7 +23,7 @@ int main() {
   }
   fclose(infile);
 
-  printf(" %10ld byets processed\n\n", /* a */ cnt);
+  printf(" %10ld bytes processed\n\n", /* a */ cnt);
   for (i = 0; i < 64; i++) {
     for (chr = i; chr <= /* b */ i + 192; chr += /* c */ 64) {
       if ((0x20 <= chr) && (chr <= 0x7E))
