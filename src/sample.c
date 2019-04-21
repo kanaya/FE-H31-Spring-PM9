@@ -39,14 +39,19 @@ int main() {
     code[i] = i;
   ih = 255;
   while (ih > 0) {
+    /* (4) */
+    ix = 0;
     for (i = 0; i < ih; i++) {
       if (freq[i] < freq[i+1]) {
 	Swap(code[i], code[i+1]);
 	Swap(freq[i], freq[i+1]);
 	/* (7) */
+	ix = i;
       }
     }
-    ih--;
+    /* (8) */
+    /* ih--; */
+    ih = ix;    
   }
   printf("\n");
 
